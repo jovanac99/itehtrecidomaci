@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router';
+import swal from 'sweetalert';
+
 
 function Login(props) {
 
@@ -19,12 +21,20 @@ function Login(props) {
     function login(username, password) {
         for (let i = 0; i < allUsers.length; i++) {
             if (allUsers[i].username === username && allUsers[i].password === password) {
-                alert('You have successfully logged in! Welcome!')
+                swal({
+                    title: "You have successfully logged in! Welcome!",
+                    icon: "info",
+                    button: "OK!",
+                });
                 navigate('/contact')
                 return;
             }
         }
-        alert('Please try again!')
+        swal({
+            title: "Please try again!",
+            icon: "warning",
+            button: "OK!",
+        });
     }
 
 

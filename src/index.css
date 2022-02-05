@@ -7,6 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  background-color: #FDF2E9;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -25,4 +29,14 @@ h1 {
 
 #usr-lg {
   margin-top: 25px;
+}
+
+.kon-form-div {
+  width: 400px;
+  margin-left: 750px;
+  margin-top: 50px;
+}
+
+#cnt {
+  margin-top: 150px;
 }
